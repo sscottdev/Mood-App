@@ -1,14 +1,6 @@
 const output = document.getElementById("output") // Gets output div & puts it in a variable
 var hour = new Date().getHours(); //Get hour
- async function checkWeather(){
-    let respose = await fetch('https://api.openweathermap.org/data/2.5/weather?id=4160021&units=imperial&appid=e743c2a63bc0a7fdd6b2299493d3570a');
-    let json = await respose.json();
-    return json;
-}
-async function demo(){
-   let weather = await checkWeather();
-   console.log(`inside demo ${weather.main.temp}`)
-}
+
 
 demo();
 
